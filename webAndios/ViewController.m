@@ -22,6 +22,10 @@
     [self.myweb loadRequest:[NSURLRequest requestWithURL:[[NSBundle mainBundle] URLForResource:@"test" withExtension:@"html"]]];
     [self.myweb stringByEvaluatingJavaScriptFromString:@""];
     self.myweb.delegate = self;
+    
+    //有改变嘛？
+    NSLog(@"123321");
+    
 }
 
 - (void)call{
